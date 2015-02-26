@@ -1,0 +1,8 @@
+Sunday, wake up late, eat breakfast at home, take shower, go to church, eat lunch, watch tv, eat dinner, sleep
+Monday, wake up early, take shower, drink coffee, eat breakfast at home, go to work, eat dinner, watch tv, sleep
+Tuesday, wake up early, drink coffee, take shower, go to work, eat breakfast at work, eat dinner, read, sleep
+Wednesday, wake up early, eat breakfast, drink coffee, go to work, eat dinner, watch tv, sleep
+Thursday, wake up early, take shower, eat breakfast, go to work, drink coffee, go out to dinner, sleep
+Friday, wake up early, eat breakfast, drink coffee, take shower, go to work, go to bar, sleep
+Saturday, wake up late, eat breakfast, mow lawn, take shower, drink beer, go out to dinner, sleep
+
