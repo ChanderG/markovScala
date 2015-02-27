@@ -2,6 +2,8 @@ import scala.io.Source
 import scala.util.parsing.combinator._
 import scala.util.matching.Regex
 
+import markov._
+
 object Main extends App { 
 
   def Usuage {
@@ -20,10 +22,13 @@ object Main extends App {
     //MarkovParser.parseTransistions produces a list of states from this string
     //we need one big list of all states
     val states = input.flatMap( i => MarkovParser.parseTransistions(i) )
-    println(states)
+    //println(states)
 
     //so given a markov chain and current state and seeing the next state we
     //update the markov chain and the current state
+    
+    var chain: MarkovChain[String] = new MarkovChain[String]("Start")
+    states.map(chain(_))
   }
 
 }
