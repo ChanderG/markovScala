@@ -29,6 +29,9 @@ object Main extends App {
     
     var chain: MarkovChain[String] = new MarkovChain[String]("Start")
     states.map(chain(_))
+
+    //now to verify our chain
+
   }
 
 }
