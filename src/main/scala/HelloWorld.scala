@@ -31,7 +31,7 @@ object Main extends App {
     states.map(chain(_))
 
     //now to verify our chain
-
+    println(chain)
   }
 
 }

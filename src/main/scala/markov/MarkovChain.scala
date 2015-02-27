@@ -6,7 +6,7 @@ class MarkovChain[S](startstate: S){
   var transitionMap : Map[S, transitionDetails[S]] = Map[S, transitionDetails[S]]()
 
   def apply(nstate: S){
-    println(currstate + " -> " + nstate)
+    //println(currstate + " -> " + nstate)
     transitionMap = addTransition(currstate, nstate)
     currstate = nstate
   }
@@ -19,6 +19,10 @@ class MarkovChain[S](startstate: S){
   
    val newTransition: transitionDetails[S] = transition.addTransition(nstate)  
    transitionMap.updated(pstate, newTransition)  
+  }
+
+  override def toString() = {
+    transitionMap.toString
   }
 }
 
@@ -34,5 +38,9 @@ class transitionDetails[S](transitionCounter: Map[S, Int]){
   def countFor(state: S): Int = {
     if ( transitionCounter.contains(state) ) transitionCounter(state)
     else 0
+  }
+
+  override def toString() = {
+    transitionCounter.toString
   }
 }
