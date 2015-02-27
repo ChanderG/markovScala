@@ -16,7 +16,14 @@ object Main extends App {
     val input = lines.split("\n").toList
     //println(input)
 
-    input.foreach { i => println( MarkovParser.parseTransistions(i) ) }
+    //input is a list of strings
+    //MarkovParser.parseTransistions produces a list of states from this string
+    //we need one big list of all states
+    val states = input.flatMap( i => MarkovParser.parseTransistions(i) )
+    println(states)
+
+    //so given a markov chain and current state and seeing the next state we
+    //update the markov chain and the current state
   }
 
 }
